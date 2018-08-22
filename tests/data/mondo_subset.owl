@@ -1,0 +1,2422 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/mondo.owl#"
+     xml:base="http://purl.obolibrary.org/obo/mondo.owl"
+     xmlns:mondo="http://purl.obolibrary.org/obo/mondo#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mondo.owl">
+        <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#ABBREVIATION -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ABBREVIATION">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abbreviation</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#AMBIGUOUS -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#AMBIGUOUS">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ambiguous</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#DEPRECATED -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#DEPRECATED">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A synonym that is historic and discouraged</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#DUBIOUS -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#DUBIOUS">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dubious synonym</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#EXCLUDE -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#EXCLUDE">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym to be removed from public release but maintained in edit version as record of external usage</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#MISSPELLING -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#MISSPELLING">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A synonym that is recorded for consistency with another source but is a misspelling</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#clingen -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#clingen">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">initial subset used by clingen</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#closeMatch"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#do_inheritance_inconsistent -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#do_inheritance_inconsistent">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classes where the corresponding DO term is both AR and AD https://github.com/monarch-initiative/monarch-disease-ontology/issues/406</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#exactMatch"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#excluded_subClassOf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#excluded_subClassOf">
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">excluded_subClassOf</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">excluded subClassOf</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#gard_rare -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#gard_rare">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GARD rare disease subset</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#historic_epidemic -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#historic_epidemic">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classes representing a historic epidemic</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#merged_class -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#merged_class">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this class merges distinct concepts in other resources</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#metaclass -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#metaclass">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A grouping of disease classes. Should be excluded from analysis</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#mostly_harmless -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#mostly_harmless">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">condition has no severe phenotypes and is harmless or mostly harmless</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#n_of_one -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#n_of_one">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N of one</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#not_a_disease -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#not_a_disease">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classes that do not represent diseases</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#ordo_biological_anomaly -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ordo_biological_anomaly">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological anomaly</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#ordo_clinical_situation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ordo_clinical_situation">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particular clinical situation in a disease or syndrome</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#ordo_clinical_subtype -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ordo_clinical_subtype">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clinical subtype</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#ordo_clinical_syndrome -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ordo_clinical_syndrome">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clinical syndrome</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#ordo_disease -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ordo_disease">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#ordo_etiological_subtype -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ordo_etiological_subtype">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">etiological subtype</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group of disorders</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#ordo_histopathological_subtype -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ordo_histopathological_subtype">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">histopathological subtype</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#ordo_inheritance_inconsistent -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ordo_inheritance_inconsistent">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classes where the corresponding ordo term is both AR and AD https://github.com/monarch-initiative/monarch-disease-ontology/issues/406</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#ordo_malformation_syndrome -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ordo_malformation_syndrome">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malformation syndrome</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#ordo_morphological_anomaly -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ordo_morphological_anomaly">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">morphological anomaly</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#other_hierarchy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#other_hierarchy">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bin for classes that are likely not diseases and may be moved to a separate hierarchy</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#predisposition -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#predisposition">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diseases that are pre-dispositions to other diseases</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#prototype_pattern -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#prototype_pattern">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conforms to the prototype design pattern where the classic/type1 form may be confused with the grouping type. See https://github.com/monarch-initiative/monarch-disease-ontology/issues/149</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#seeAlso"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#speculative -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#speculative">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hypothesized disease whose existence is speculative</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subset_property</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synonym_type_property</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_format_version</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_synonym_type</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_metadata_tag -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorthand</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002573 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002573">
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002573</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_modifier</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_modifier</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has modifier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000001">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D004194"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/64572001"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0012634"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2991"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_377788"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0000408</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:N18</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:799.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D004194</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C2991</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000031</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:377788</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:64572001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0012634</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">condition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases and disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medical condition</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease or disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0000607 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000607">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0018898"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T-cell non-Hodgkin lymphoma arising from the skin. Representative examples include mycosis fungoides and primary cutaneous anaplastic large cell lymphoma.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/28054005"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D016410"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_0060061"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3467"/>
+        <mondo:excluded_subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000434"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0060061</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0002913</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICDO:9709/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D016410</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C3467</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CTCL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCTCL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-cell non-Hodgkin&apos;s lymphoma of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-cell non-Hodgkin&apos;s lymphoma of the skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cutaneous T cell lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cutaneous T-cell lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cutaneous T-cell non-Hodgkin lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cutaneous T-cell non-Hodgkin&apos;s lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary cutaneous T-cell non-Hodgkin lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary cutaneous T-cell non-Hodgkin&apos;s lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin T-cell non-Hodgkin&apos;s lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000607</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary cutaneous T-cell non-Hodgkin lymphoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0000653 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000653">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002051"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004992"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A malignant neoplasm involving the integumental system</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_0060122"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0060122</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer of integumental system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">integumental system cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant integumental system neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant neoplasm of integumental system</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000653</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">integumentary system cancer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021199"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease involving the integumental system.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_16"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:16</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of integumental system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">integumental system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">integumentary disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disorder of integumental system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002051</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">integumentary system disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021199"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease involving the musculoskeletal system.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/156881000"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/268047003"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/268142006"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/274149006"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D009140"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/928000"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0026857"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_17"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C107377"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:17</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:729.99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D009140</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C107377</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:928000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0026857</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of musculoskeletal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disorder of musculoskeletal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal disorder</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002334 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002334">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005570"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neoplasms of the hematopoietic system, including hematopoietic cell neoplasms (e.g. leukemias, lymphomas) and non-hematopoietic cell neoplasms that can affect the hematopoietic system (e.g. lymph node and splenic sarcomas). --2003</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/414388001"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/414644002"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D019337"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/129154003"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0376544"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0376545"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C1512393"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_2531"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35813"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:2531</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D019337</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C35813</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:129154003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0376544</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0376545</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C1512393</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood neoplasm (disease)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematologic neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematologic neoplasm (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematological tumors</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic and lymphoid system neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic and lymphoid system tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic neoplasm (morphologic abnormality)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic tumors</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant hematopoietic neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm of blood</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumor of blood</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood cancer</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematologic malignancy</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematologic malignancy (disorder)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic cancer</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant hematopoietic neoplasm (morphologic abnormality)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematologic cancer</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002334</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic and lymphoid system neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002523 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002523">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005093"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The mucinoses are a diverse group of disorders which have in common the deposition of basophilic, finely granular and stringy material (mucin) in the connective tissues of the dermis (dermal mucinoses), in the pilosebaceous follicles (follicular mucinoses), or in the epidermis and tumors derived therefrom (epithelial mucinoses).</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/11528001"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D017520"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/402721001"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0162855"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_3141"/>
+        <mondo:excluded_subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0003900"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:3141</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:701.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D017520</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:402721001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0162855</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mucinosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mucinosis affecting the skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mucinoses</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002523</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Editor note: consider splitting by location</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cutaneous mucinosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002531 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002531">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005093"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A benign or malignant tumor involving the skin. Representative examples of benign skin neoplasms include the benign melanocytic skin nevus, acanthoma, sebaceous adenoma, sweat gland adenoma, lipoma, hemangioma, fibroma, and benign fibrous histiocytoma. Representative examples of malignant skin neoplasms include basal cell carcinoma, squamous cell carcinoma, melanoma, and Kaposi sarcoma.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/363230005"/>
+        <mondo:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C1123023"/>
+        <mondo:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12470"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D012878"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/126488004"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0037286"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_3165"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3372"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:3165</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0004198</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:239.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D012878</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C3372</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONCOTREE:SKIN</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:126488004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0037286</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm of skin (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm of skin by site</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm of the skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm of zone of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin neoplasms</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumor of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumor of the skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumor of zone of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zone of skin neoplasm (disease)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zone of skin tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin benign neoplasm</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002531</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002898 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002898">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000653"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002531"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A malignant neoplasm involving the zone of skin</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/188143008"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/190107001"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/363511009"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/94047004"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/372130007"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0007114"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_4159"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2920"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COHD:4155297</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:4159</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GARD:0010421</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:C43.C44</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:173.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:173.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C2920</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:372130007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0007114</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CA - skin cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer of zone of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant neoplasm of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant neoplasm of the skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant neoplasm of zone of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant skin neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant skin tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant tumor of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant tumor of the skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant zone of skin neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">melanoma and non-melanoma skin cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin cancer, Including melanoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin neoplasm, malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zone of skin cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer of skin</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin cancer, NOS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002898</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin cancer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0003847 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0003847">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021152"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021152"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/MONDO_0016592"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease that is caused by genetic modifications where those modifications are inherited from a parent&apos;s genome.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/264530000"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D030342"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/32895009"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0019247"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_630"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3101"/>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic condition</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic disease</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic disorder</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:630</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0000508</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:799.89</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D030342</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C3101</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:32895009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0019247</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hereditary disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hereditary diseases</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inherited disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">familial disorder</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inborn disorder</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003847</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Usage note: this is intended only for diseases with an inherited genetic etiology. Somatic genetic mutations are excluded. Some ontologies use the term &apos;genetic disease&apos; in the sense of inherited disorders only, we are here careful to distinguish.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inherited genetic disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0003900 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0003900">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002081"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease involving the connective tissue.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/201432001"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/268048008"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/268126004"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D003240"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/105969002"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0009782"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_65"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C26729"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COHD:253549</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:65</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D003240</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C26729</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:105969002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0009782</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue diseases</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of connective tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease, connective tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disorder of connective tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary disorder of connective tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue disease, connective</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004992 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004992">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005070"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005165"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/mesh/D009371"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/154432008"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/154433003"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/154577008"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/187597000"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/188475001"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/188482002"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/190150006"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/269513004"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/269623003"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/269626006"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/269634000"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/38807002"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/363346000"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0006826"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_0050686"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_0050687"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_162"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9305"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COHD:443392</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0050686</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0050687</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:162</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0000311</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GARD:0011960</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:C80</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:C80.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:195.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:199</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:199.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICDO:8000/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C9305</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIFSTD:birnlex_406</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONCOTREE:MT</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:363346000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0006826</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell type cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignancy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant Growth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant neoplastic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm (disease), malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm, malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organ system cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MT</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004992</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005157"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0015757"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A malignant (clonal) proliferation of B- lymphocytes or T- lymphocytes which involves the lymph nodes, bone marrow and/or extranodal sites. This category includes Non-Hodgkin lymphomas and Hodgkin lymphomas.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/115244002"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/134218000"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/188676008"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/188694002"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/188695001"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/188704004"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/189959002"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/189965002"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/21964009"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/269627002"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/414628006"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/meddra/10025310"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D008223"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/118600007"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0024299"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_0060058"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3208"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_223735"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COHD:432571</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0060058</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0000574</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GARD:0011955</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:C85.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:200.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:200.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:202.80</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICDO:9590/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D008223</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedDRA:10025310</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C3208</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONCOTREE:MLYM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:223735</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:118600007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0024299</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoid cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoma (Hodgkin and non-Hodgkin)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoma (Hodgkin&apos;s and non-Hodgkin&apos;s)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoma, malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphomatous</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MLYM</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoma, NOS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005062</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A223735___%3A.__ordo_group_of_disorders"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">_:comment___:_:@___:_:source__EFO:0000574___:.__This is potentially too broad as well as overlaps with leukemia and should be obsoleted.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0023370"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/MONDO_0006906"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024291"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia. Representative examples of benign neoplasms include papillomas, cystadenomas, and lipomas; malignant neoplasms include carcinomas, sarcomas, lymphomas, and leukemias.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/108369006"/>
+        <mondo:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0205394"/>
+        <mondo:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0375111"/>
+        <mondo:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17649"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D009369"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/55342001"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_14566"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3262"/>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell process disease</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COHD:438112</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:14566</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0000616</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HP:0002664</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:C00.D48</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:140-239.99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:239.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:239.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D009369</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C3262</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONCOTREE:OTHER</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:55342001</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of cellular proliferation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplastic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplastic growth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumor disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other neoplasm</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005070</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm (disease)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021199"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-neoplastic or neoplastic disorder that affects the brain, spinal cord, or peripheral nerves.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/154981003"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/155262005"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/192641002"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/267679005"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/286946008"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D009422"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/118940003"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0027765"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_863"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C26835"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:863</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0000618</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:G00-G99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:G00.G99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:G98</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:G98.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:349.89</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:349.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D009422</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C26835</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:118940003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0027765</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Nervous_system_disease</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of nervous system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disorder of nervous system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurologic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurologic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurological disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurological disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005071</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002051"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any deviation from the normal structure or function of the skin or subcutaneous tissue that is manifested by a characteristic set of symptoms and signs.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/156292006"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/156396006"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/156400006"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/156445005"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/199879009"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/200580005"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/201095006"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/201107006"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/267806002"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/267859000"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/267860005"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/267873009"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/5613003"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/80659006"/>
+        <mondo:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0029574"/>
+        <mondo:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0037274"/>
+        <mondo:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0037277"/>
+        <mondo:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27554"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D012871"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/95320005"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_37"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3371"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:37</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0000701</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:702</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:702.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:709.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D012871</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C3371</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:95320005</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cutaneous disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of zone of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disorder of skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin and subcutaneous tissue disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin diseases and manifestations</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zone of skin disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dermatosis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genodermatosis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disorder of zone of skin</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005093</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0044881"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A neoplasm composed of a lymphocytic cell population which is usually malignant (clonal) by molecular genetic and/or immunophenotypic analysis. Lymphocytic neoplasms include Hodgkin and non-Hodgkin lymphomas, acute and chronic lymphocytic leukemias, and plasma cell neoplasms.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/414628006"/>
+        <mondo:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0024202"/>
+        <mondo:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C13252"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0598798"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7065"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0001642</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:200.7</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C7065</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONCOTREE:LYMPH</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0598798</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphocytic and plasma cell neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphocytic and plasma cell tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphocytic and plasma cell tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphocytic and plasmacytic neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphocytic neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphocytic tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoid and plasma cell tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoid and plasma cell tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoid and plasmacytic neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoid and plasmacytic tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoid and plasmacytic tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoid neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoid tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005157</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoid neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005165"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005570 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005570">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021199"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease involving the hematopoietic system.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/154785002"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/154842002"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/191124002"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/191402006"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/191446003"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/267552000"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/267573000"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/34093004"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D006402"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/414022008"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0018939"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/CN882913"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_74"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C26323"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:74</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0005803</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GTR:AN1320635</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:D75.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:280-289.99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:289.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:289.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D006402</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C26323</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:414022008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0018939</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:CN882913</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of hematopoietic system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of the blood and blood-forming organs</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematologic and Lymphocytic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematologic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematological disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematological disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood dyscrasia NOS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disorder of hematopoietic system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematological disorders and malignancies</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005570</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">_:comment___:_:@___:_:source__EFO:0005803___:.__placeholder for lymphoid disease</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematological system disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0006906 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0006906"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0009691 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0009691">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000607"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0015821"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classical mycosis fungoides is the most common type of mycosis fungoides (MF; see this term), a form of cutaneous T-cell lymphoma, and is characterized by slow progression from patches to more infiltrated plaques and eventually to tumors.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/meddra/10028483"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/188618003"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/188628007"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/190003004"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/190004005"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/90120004"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D009182"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/omim/254400"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/118618005"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0026948"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_8691"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3246"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_2584"/>
+        <mondo:seeAlso rdf:resource="https://rarediseases.info.nih.gov/diseases/3863/mycosis-fungoides"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COHD:4040380</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:8691</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:1001051</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GARD:0003863</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:C84.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:C84.00</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:202.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICDO:9700/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D009182</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedDRA:10028483</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C3246</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:254400</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONCOTREE:MYCF</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:2584</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:118618005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0026948</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CTCL/ mycosis fungoides</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MF</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cutaneous T-cell lymphoma/mycosis fungoides</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mycosis fungoides</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mycosis fungoides (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mycosis fungoides (morphologic abnormality)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mycosis fungoides NOS (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mycosis fungoides NOS (morphologic abnormality)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mycosis fungoides lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mycosis fungoides of unspecified site</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mycosis fungoides of unspecified site (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mycosis fungoides, Alibert-Bazin type</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mycosis fungoides, unspecified site, extranodal and solid organ sites</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alibert-Bazin syndrome</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classic mycosis fungoides</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">granuloma fungoides</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0009691</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__GARD%3A0003863___%3A.__gard_rare"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A2584___%3A.__ordo_disease"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mycosis fungoides</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0015549 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015549">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0005570"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021136"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021150"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005570"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021198"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/CN199710"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_158300"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:158300</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:CN199710</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0015549</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A158300___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare genetic hematologic disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0015757 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015757">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0019044"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_171898"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:171898</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0015757</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A171898___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphoid hemopathy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0015758 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015758">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0015760"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0018898"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/meddra/10011677"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D016410"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0079773"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_171901"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GARD:0006226</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:C84.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedDRA:10011677</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:171901</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0015758</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A171901___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary cutaneous T-cell lymphoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0015760 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015760">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0018908"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-Hodgkin lymphoma of T-cell lineage. It includes the T lymphoblastic lymphoma and the mature T- and NK-cell lymphomas. -- 2003</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/meddra/10042971"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D016399"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/109978004"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0079772"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3466"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_171918"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:202.70</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D016399</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedDRA:10042971</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C3466</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:171918</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:109978004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0079772</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T cell lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-cell NHL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-cell and NK-cell non-Hodgkin lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-cell and NK-cell non-Hodgkin&apos;s lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-cell lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-cell non-Hodgkin lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-cell non-Hodgkin&apos;s lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-Hodgkin&apos;s T-cell lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0015760</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A171918___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-cell non-Hodgkin lymphoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0015808 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015808">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0009691"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021655"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Folliculotropic mycosis fungoides is a rare variant of mycosis fungoides (MF; see this term), a form of cutaneous T-cell lymphoma, and is characterized by the presence of folliculotropic infiltrates in patch-plaque lesions usually involving the head and neck area.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/404109006"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C1627767"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35685"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_178512"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:C84.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:701.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C35685</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:178512</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:404109006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C1627767</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">follicular mucinosis type mycosis fungoides</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">follicular mycosis fungoides</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">folliculotropic mycosis fungoides</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mycosis fungoides-associated follicular mucinosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alopecia mucinosa (t cell lymphoma)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0015808</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A178512___%3A.__ordo_disease"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">folliculotropic mycosis fungoides</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0015811 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015811">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0015817"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primary cutaneous aggressive epidermotropic CD8+ T-cell lymphoma is a rare form of primary cutaneous T-cell lymphoma characterized by rapidly progressing, localized or disseminated nodules, tumors or eczematous skin lesions. It has a particularly aggressive clinical course with a high tendency to spread, in advanced stages, to extracutaneous locations (the central nervous system, lung, testes). Lymph nodes are often spared.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_178528"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:C84.4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:178528</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Berti lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary cutaneous epidermotropic cytotoxic CD8+ T-cell lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0015811</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A178528___%3A.__ordo_disease"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary cutaneous aggressive epidermotropic CD8+ T-cell lymphoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0015816 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015816">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0015758"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_178548"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:178548</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0015816</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A178548___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indolent primary cutaneous T-cell lymphoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0015817 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015817">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0015758"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_178551"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:178551</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0015817</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A178551___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aggressive primary cutaneous T-cell lymphoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0015821 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015821">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0015816"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mycosis fungoides (MF) and its variants represent the most common forms of cutaneous T-cell lymphomas. The term MF is restricted to the classical form characterized by the slow progression of patches, plaques and tumors, and to variants with a similar indolent course.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/CN226743"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_178566"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:C84.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:178566</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:CN226743</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0015821</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A178566___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mycosis fungoides and variants</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0015950 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015950">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002531"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0019041"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0019043"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/CN200547"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_183487"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:183487</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:CN200547</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic skin tumor</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0015950</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A183487___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inherited skin tumor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0016592 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0016592"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0016645 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0016645">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0023370"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021136"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0020031"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0021058"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021200"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0023370"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Either a rare isolated neoplasm or a syndrome with neoplasm as a major feature.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_250908"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:250908</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare neoplasm (disease)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare neoplastic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare tumoral disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0016645</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A250908___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare neoplastic disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0016685 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0016685">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0019781"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024495"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0019781"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021638"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/meddra/10065869"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C1314694"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_251592"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedDRA:10065869</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:251592</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0016685</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A251592___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low-grade astrocytoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0016690 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0016690">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0016685"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A WHO grade ll astrocytic tumor with a relatively favorable prognosis. It is characterized by pleomorphic and lipidized cells expressing GFAP often surrounded by a reticulin network and eosinophilic granular bodies. It presents in the superficial cerebral hemispheres and involves the meninges. It typically affects children and young adults.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/189924002"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/78838008"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0334586"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_4852"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4323"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_251607"/>
+        <mondo:seeAlso rdf:resource="https://rarediseases.info.nih.gov/diseases/10631/pleomorphic-xanthoastrocytoma"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:4852</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GARD:0010631</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:C71.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:C79.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICDO:9424/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C4323</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONCOTREE:PXA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:251607</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0334586</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PXA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pleomorphic Xantho-astrocytoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0016690</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__GARD%3A0010631___%3A.__gard_rare"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A251607___%3A.__ordo_disease"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pleomorphic xanthoastrocytoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0016691 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0016691">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0016685"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pilocytic astrocytoma is a rare subtype of low-grade glioma of the central nervous system characterized by a well circumscribed, often cystic, brain tumor with a discrete mural nodule and long, hair-like projections that extend from the neoplastic astrocytes. Depending on the primary localization and the size of the tumor, patients can present with signs of raised intracranial pressure (headache, vomiting, papilledema), blurred vision, decreased visual acuity, ataxia and/or nystagmus, among others. It is most commonly located in the cerebellum, but ocurrence in the hypothalamus, brain stem, optic chiasma, and hemispheres has also been reported.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/128854008"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/189915006"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/253064000"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/67859002"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0334583"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_4851"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4047"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_251612"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:4851</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GARD:0009808</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:C71.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10:C79.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICDO:9421/1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C4047</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONCOTREE:PAST</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:251612</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0334583</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piloid astrocytoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrocytoma, benign</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrocytoma, pilocytic, benign</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grade I astrocytic neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grade I astrocytic tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grade I astrocytoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pilocytic astrocytoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0016691</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A251612___%3A.__ordo_disease"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pilocytic astrocytoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0017207 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0017207">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005062"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_279911"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:279911</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0017207</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A279911___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary organ-specific lymphoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0018898 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018898">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002898"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0015549"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0017207"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0019300"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cutaneous lymphoma is a heterogeneous entity with respect to its clinical and pathological features, evolutive profile, prognosis, molecular aetiology and response to therapy. These specifications have been taken into account in recent classifications, which have placed particular importance on the prognostic implications of these different entities.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/meddra/10051708"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/400001003"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C1276146"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C1302772"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7162"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_542"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedDRA:10051708</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C7162</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:542</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:400001003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C1302772</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary cutaneous lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary skin lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0018898</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A542___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary cutaneous lymphoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0018908 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018908">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005062"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Distinct from Hodgkin lymphoma both morphologically and biologically, non-Hodgkin lymphoma (NHL) is characterized by the absence of Reed-Sternberg cells, can occur at any age, and usually presents as a localized or generalized lymphadenopathy associated with fever and weight loss. The clinical course varies according to the morphologic type. NHL is clinically classified as indolent, aggressive, or having a variable clinical course. NHL can be of B-or T-/NK-cell lineage.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/meddra/10029547"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D008228"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0024305"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_0060060"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3211"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_547"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0060060</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0005952</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICDO:9591/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D008228</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedDRA:10029547</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C3211</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONCOTREE:NHL</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:547</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0024305</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NHL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-Hodgkin lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-Hodgkin&apos;s lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-Hodgkin&apos;s lymphoma (NHL)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-Hodgkins lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NHL, NOS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-Hodgkin lymphoma, NOS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0018908</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A547___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-Hodgkin lymphoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0019041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0019041">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0005070"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021136"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021152"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0003847"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0020031"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021198"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/CN205525"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_68336"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:68336</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:CN205525</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare genetic tumor</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0019041</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A68336___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare genetic inherited tumor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0019043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0019043">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0005093"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021136"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021150"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0019519"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021198"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024255"/>
+        <mondo:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0037277"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_68346"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:68346</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare genodermatosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0019043</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A68346___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare genetic skin disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0019044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0019044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002334"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0020006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0020031"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/CN205528"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_68347"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:68347</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:CN205528</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0019044</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A68347___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumor of hematopoietic and lymphoid tissues</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0019300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0019300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0015950"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/CN205934"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_79386"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:79386</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:CN205934</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0019300</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A79386___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare skin tumor or hamartoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0019519 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0019519">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0005093"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021136"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005093"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021200"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rare skin disease.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/CN206332"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_89826"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:89826</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:CN206332</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare skin disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0019519</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A89826___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare skin disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0019781 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0019781">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021636"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tumor of the brain or spinal cord showing astrocytic differentiation. It includes the following clinicopathological entities: pilocytic astrocytoma, diffuse astrocytoma, anaplastic astrocytoma, pleomorphic xanthoastrocytoma, and subependymal giant cell astrocytoma.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D001254"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/147101000119108"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0004114"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C60781"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICDO:9400/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D001254</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C60781</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONCOTREE:ASTR</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:147101000119108</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0004114</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrocytoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0019781</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class denotes astrocytomas proper which excludes GBM. See https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues/23</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrocytoma (excluding glioblastoma)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0020006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0020006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005570"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021200"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/CN206939"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_97992"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:97992</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:CN206939</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0020006</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A97992___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare hematologic disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0020031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0020031">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0005070"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021136"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0016645"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rare disease of cellular proliferation.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0375111"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_98057"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:98057</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare disease of cellular proliferation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0020031</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A98057___%3A.__ordo_group_of_disorders"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare tumor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021193"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A benign or malignant brain and spinal cord tumor that arises from glial cells (astrocytes, oligodendrocytes, ependymal cells). Tumors that arise from astrocytes are called astrocytic tumors or astrocytomas. Tumors that arise from oligodendrocytes are called oligodendroglial tumors. Tumors that arise from ependymal cells are called ependymomas.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D005910"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/393564001"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0017638"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3059"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D005910</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C3059</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:393564001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0017638</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glial neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glial tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glioma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm of neuroglia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm of the neuroglia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuroglial neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuroglial tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumor of neuroglia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumor of the neuroglia</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021042</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glioma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021058"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021125">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of a disease.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C1514623"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41009"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C41009</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease qualifier</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021125</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease characteristic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021125"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021135</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare or common</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021135"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease or disorder is defined as rare in Europe when it affects fewer than 1 in 2000. A disease or disorder is defined as rare in the USA when it affects fewer than 200,000 Americans at any given time. Here we take the European definition to be consistent with Orphanet.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare (European definition)</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021136</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021125"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021139</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congenital or acquired</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021139"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A characteristic of a disease in which the disease is present at birth, regardless of cause.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inborn</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021140</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congenital</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021125"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021149</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic or non-genetic etiology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021149"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A characteristic of a disease in which the cause of the disease is a genetic problem caused by one or more abnormalities in the genome. Genetic conditions may be present at birth (congenital) but this need not be the case. Not all genetic disorders are hereditary.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0004420</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genomic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021150</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Editor note: we use this modifier when axiomatizing ordo classes that use &apos;genetic&apos; in the name. In some cases the intended interpretation may be stronger, e.g. inherited and genetic</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021152 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021152">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021140"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021150"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A characteristic of a disease in which the cause of the disease is a genetic problem inherited from either or both parents. All genetic and inherited diseases are by definition non-aquired.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constitutitional genetic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hereditary</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inherited genetic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021152</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic and inherited</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021193 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021193">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A neoplasm of the nervous system that arises from the neuroepithelial tissues. Representative examples include astrocytic tumors, oligodendroglial tumors, ependymal tumors, and primitive neuroectodermal tumors.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D018302"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3787"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D018302</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C3787</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONCOTREE:PRNET</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm of neuroepithelial tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm of neuroepithelium</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm of the neuroepithelium</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuroepithelial neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuroepithelial neoplasms</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuroepithelial tissue neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuroepithelial tissue tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuroepithelial tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuroepithelial tumors</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumor of neuroepithelial tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumor of neuroepithelium</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumor of the neuroepithelium</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary neuroepithelial tumor</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021193</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Editor note consider adding grouping class for Neuroepithelial, Perineurial, and Schwann Cell Neoplasm</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuroepithelial neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021198 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021198">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021136"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021150"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021200"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/CN206953"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_98053"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:98053</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:CN206953</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021198</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare genetic disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021199 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021199">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease that disrupts the functioning of an organ system.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/362965005"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C1285159"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_7"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:7</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:796.4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:362965005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C1285159</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomical system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of anatomical system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of anatomical entity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disorder of anatomical system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021199</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#metaclass"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease by anatomical system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021200 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021200">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021136"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021136"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any of the forms of disease that have a rare incidence.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0678236"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D035583"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4873"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D035583</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C4873</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare diseases</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021200</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">At this time we do not have a formal definition but this should correspond to ORDO classification of rare diseases</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021248">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005071"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A neoplasm (disease) that involves the nervous system.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0027766"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3268"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COHD:444200</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C3268</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm of nervous system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplasm of the nervous system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system neoplasm (disease)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system neoplasms</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system tumour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumor of nervous system</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021248</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021636 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021636">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021042"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A glial tumor of the brain or spinal cord showing astrocytic differentiation. It includes the following clinicopathological entities: pilocytic astrocytoma, diffuse astrocytoma, anaplastic astrocytoma, pleomorphic xanthoastrocytoma, subependymal giant cell astrocytoma, and glioblastoma.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/189914005"/>
+        <mondo:closeMatch rdf:resource="http://identifiers.org/snomedct/38713004"/>
+        <mondo:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0750935"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/meddra/10003571"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_3069"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C6958"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/Orphanet_94"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:3069</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0000272</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedDRA:10003571</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C6958</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphanet:94</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Astroglioma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrocytic neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrocytic tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrocytoma of brain</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrocytoma, no ICD-O subtype</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astroglioma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrocytoma</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021636</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/_#_subset___%3A_%3A%40___%3A_%3Asource__Orphanet%3A94___%3A.__ordo_group_of_disorders"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class encompasses astrocytomas proper as well as GBM. See https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues/23</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrocytic tumor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021637 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021637">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0021042"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024495"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021042"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024495"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A grade I or grade II glioma arising from the central nervous system. This category includes pilocytic astrocytoma, diffuse astrocytoma, subependymal giant cell astrocytoma, ependymoma, oligodendroglioma, oligoastrocytoma, and angiocentric glioma.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C1997217"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C132067"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C132067</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C1997217</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Low grade glioma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Low-grade glioma</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021637</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low grade glioma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021638 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021638">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0021636"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024495"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021636"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021637"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A grade I or grade II astrocytic tumor. This category includes pilocytic astrocytoma (grade I), subependymal giant cell astrocytoma (grade I), and diffuse astrocytoma (grade II).</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C3898569"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116342"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C116342</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C3898569</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Low grade astrocytic neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Low grade astrocytic tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Low-grade astrocytic neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Low-grade astrocytic tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021638</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low grade astrocytic tumor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021655 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021655">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002523"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/402723003"/>
+        <mondo:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C1274173"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:701.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:402723003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C1274173</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021655</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary catabolic mucinosis of skin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0023370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0023370">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0005070"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0021058"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Either an isolated neoplasm or a syndrome with neoplasm as a major feature.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplastic disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplastic disorder</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0023370</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neoplastic disease or syndrome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0024255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024255">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0005093"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002573"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021150"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0003847"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005093"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of skin disease that is caused by a modification of the individual&apos;s genome.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/mesh/D012873"/>
+        <mondo:exactMatch rdf:resource="http://identifiers.org/snomedct/239001006"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D012873</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:239001006</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic skin disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genodermatosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease, genetic skin</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases, genetic skin</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic skin diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin disease, genetic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0024255</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic skin disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0024291 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024291"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0024488 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024488">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021125"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A modifier that can be applied to a tumor class describing abnormal tumor histology or morphology. It is an indicator of how quickly a tumor is likely to grow and spread</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0024488</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumor grading characteristic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0024489 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024489">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024488"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A term that refers to the cellular differentiation of a malignant cellular infiltrate. A cancer is defined through grades I-IV (or 1-4), or as well, moderately, poorly differentiated or undifferentiated.</obo:IAO_0000115>
+        <mondo:closeMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C1511980"/>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28076"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C28076</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease grade qualifier</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0024489</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">general tumor grading characteristic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0024491 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024491"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0024492 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024492"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0024495 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024495">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0024491"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0024492"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024489"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grade 1/2</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0024495</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumor grade 1 or 2, general grading system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0044881 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0044881">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002334"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A neoplasm arising from hematopoietic cells found in the bone marrow, peripheral blood, lymph nodes and spleen (organs of the hematopoietic system). Hematopoietic cell neoplasms can also involve other anatomic sites (e.g. central nervous system, gastrointestinal tract), either by metastasis, direct tumor infiltration, or neoplastic transformation of extranodal lymphoid tissues. The commonest forms are the various types of leukemia, Hodgkin and non-Hodgkin lymphomas, myeloproliferative neoplasms, and myelodysplastic syndromes.</obo:IAO_0000115>
+        <mondo:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27134"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C27134</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HEMOLYMPHORETICULAR TUMOR, MALIGNANT</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematologic Cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematologic Malignancy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematologic Neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematological Neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematological Tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic Cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic Cell Tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic Neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic Neoplasms including Lymphomas</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic Tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic and Lymphoid Cell Neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic and Lymphoid Neoplasms</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic malignancy, NOS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic, Including Myeloma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Hematologic Neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Hematopoietic Neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematologic cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0044881</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic and lymphoid cell neoplasm</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8) https://github.com/owlcs/owlapi -->
+
