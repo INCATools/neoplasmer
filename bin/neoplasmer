@@ -180,9 +180,11 @@ main(Argv) :-
         (   var(IndexDir)
         ->  true
         ;   (   exists_directory(IndexDir)
-            ->  true
+            ->  debug(neoplasmer,'Using existing cache: ~w',[IndexDir])
             ;   make_directory(IndexDir)),
+            debug(neoplasmer,'Indexing into: ~w',[IndexDir]),
             index_pairs(IndexDir)),
+        opt_forall(port(X),server(X),Opts),
         opt_if_call(interactive,sparqlprog_shell(Opts),Opts),
         opt_if_call(prolog,prolog_shell(Opts),Opts),
         forall(member(File,Files),
@@ -266,7 +268,7 @@ wrule(R) :-
 
 
 handle_opts(Opts) :-
-        opt_if_call(verbose,debug(rdf_matcher),Opts),
+        opt_if_call(verbose,debug(neoplasmer),Opts),
         opt_if_call(verbose,debug(index),Opts),
         opt_if_call(verbose,debug(rule_eval),Opts),
         opt_if_call(stacktrace,use_module(library(sparqlprog/stacktrace)),Opts),
@@ -277,8 +279,9 @@ handle_opts(Opts) :-
         opt_forall(ontology(Prefix),set_ontology(Prefix),Opts),
         opt_forall(consult(X),consult(X),Opts),
         opt_forall(input(X),rdf_load_wrap(X),Opts),
-        opt_forall(goal(X),X,Opts),
-        opt_forall(port(X),server(X),Opts).
+        opt_forall(goal(X),X,Opts).
+
+
 
 
 % execute a goal for every ground instance of Template
