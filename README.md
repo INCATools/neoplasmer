@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/13996/cmungall/neoplasmER.svg)](https://zenodo.org/badge/latestdoi/13996/cmungall/neoplasmER)
+
 # neoplasmer (ALPHA RELEASE)
 
 Matches names of cancers and cancer-related conditions to ontology classes
