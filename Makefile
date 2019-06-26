@@ -8,14 +8,14 @@
 #include ../Makefile.inc
 
 SWIPL = swipl  -L0 -G0 -T0  -p library=prolog
-all: test
+all: tmp test
 
 check:
 install:
 clean:
 
 
-test:
+test: tmp
 	$(SWIPL) -l tests/tests.pl -g run_tests,halt
 
 bigtest:
@@ -27,6 +27,8 @@ coverage:
 t-%:
 	$(SWIPL) -l tests/$*_test.pl -g run_tests,halt
 
+tmp:
+	mkdir $@
 
 # --------------------
 # Docker

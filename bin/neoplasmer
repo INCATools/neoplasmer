@@ -193,14 +193,19 @@ main(Argv) :-
 
 
 parse_and_match(File) :-
-        csv_read_file(File,Rows,[]),
+        csv_read_file(File,Rows,[match_arity(false)]),
         maplist(parse_row,Rows).
 
 parse_row(Row) :-
+        Opts=[format(tsv)],
         Row =.. [_Pred,Term|_],
         G = term_best_match(Term,_,_,_),
-        forall(G,
-               write_result_wrap(G,[format(tsv)])).
+        findall(G,G,Gs),
+        (   Gs=[]
+        ->  write_result_wrap(term_best_match(Term,no_match,'n/a',none),Opts)
+        ;   forall(member(G,Gs),
+                   write_result_wrap(G,Opts))).
+        
 
 
 write_result_wrap(G,Opts) :-

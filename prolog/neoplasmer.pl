@@ -72,6 +72,7 @@ replace_term(V,Src,Tgt,V2) :-
 %! term_best_match(+Term, ?MatchCls, ?MatchScore, ?MatchClsPrefix) is nondet
 term_best_match(V, C, S, P) :-
         debug(matcher,'Matching: ~w',[V]),
+        % succeeds once for every value of P
         setof(C-S,term_match_score(V, C, S, P),Pairs),
         member(C-S,Pairs),
         \+ ((member(_-S2,Pairs),S2>S)).
