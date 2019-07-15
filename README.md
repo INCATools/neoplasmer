@@ -9,7 +9,7 @@ Matches names of cancers and cancer-related conditions to ontology classes
 Currently the recommended way to do this is on the command line via the [neoplasmer.sh](neoplasmer.sh) bash script:
 
 ```
-./neoplasmer.sh inputs.txt
+./neoplasmer.sh tests/data/vicc_input.txt
 ```
 
 You do not need to install anything other than [Docker](http://docker.com/get-docker). The shell script is standalone.
@@ -20,6 +20,8 @@ The first execution will take a minute or two; some warning messages
 may be printed, these can be ignored. Two directories will be created: `RDF-Cache` and `.cache`
 
 Subsequent executions will be much faster
+
+You can see example results in [scratch/vicc-results.txt](scratch/vicc-results.txt)
 
 ## Python client
 
