@@ -21,7 +21,7 @@ may be printed, these can be ignored. Two directories will be created: `RDF-Cach
 
 Subsequent executions will be much faster
 
-You can see example results in [scratch/vicc-results.txt](scratch/vicc-results.txt)
+You can see example results in [scratch/vicc-results.tsv](scratch/vicc-results.tsv)
 
 ## Python client
 
